@@ -16,6 +16,9 @@ public class Velo {
 		this.braquet = braquet;
 	}
 	
+	public Velo () {
+		braquet = DEFAUT_BRAQUET;
+	}
 	
 	public double getDEFAUT_BRAQUET() {
 		return DEFAUT_BRAQUET;
