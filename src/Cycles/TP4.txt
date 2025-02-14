@@ -8,4 +8,4 @@ Exercice 7 : @Override Cette annotation sert à marquer explicitement qu'une mé
 
 Exercice 8 : Elle est pertinente car cela permet au compilateur de vérifier que la méthode dans la sous-classe respecte bien la signature de la méthode dans la classe parente. Si @Override est enlevé, Java insère automatiquement un appel au contstructeur de base sans argument super() de la classe de base. 
 
-Exercice 10 : getPuissance dans VeloElec est annotée avec @Override car elle redéfinit la puissance du Velo électrique.
+Exercice 10 : l'appel super.getPuissance dans VeloElec fait référence à l'appel de la méthode getPuissance() de la classe parente (Velo).
