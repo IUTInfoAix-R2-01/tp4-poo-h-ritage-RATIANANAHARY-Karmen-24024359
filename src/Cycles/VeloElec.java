@@ -1,6 +1,5 @@
 package Cycles;
 
-import java.util.Random;
 
 public class VeloElec extends Velo {
 	private static double DEFAUT_FACTEUR_PUISSANCE_MOTEUR = 15.0;
@@ -16,7 +15,7 @@ public class VeloElec extends Velo {
 		facteurPuissanceMoteur = coupleMoteur;
 	}
 	
-	public VeloElec() {
+	public VeloElec () {
 		super();
 		this.facteurPuissanceMoteur = DEFAUT_FACTEUR_PUISSANCE_MOTEUR;
 	}
@@ -39,10 +38,11 @@ public class VeloElec extends Velo {
     }
 	
 	@Override
-    public String toString() {
-        return "VeloElec[facteurPuissanceMoteur=" + facteurPuissanceMoteur + "]";
-    }
+	public String toString() {
+		return "VeloElec [facteurPuissanceMoteur=" + facteurPuissanceMoteur + "]";
+	}
     
+    @Override 
     public double getPuissance(double FrequenceCoupsDePedale) {
         return super.getPuissance(FrequenceCoupsDePedale) * facteurPuissanceMoteur;
     }

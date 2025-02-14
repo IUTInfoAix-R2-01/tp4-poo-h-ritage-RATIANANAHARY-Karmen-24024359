@@ -48,8 +48,9 @@ public class Velo {
         this.diamRoue = diamRoue;
     }
 	
+	@Override
 	public String toString() {
-		return "Velo[braquet=" + braquet + ", diamRoue=" + diamRoue + "]";
+		return "Velo [braquet=" + braquet + ", diamRoue=" + diamRoue + ", genAlea=" + genAlea + "]";
 	}
 	
 	public double getPuissance(double FrequenceCoupsDePedale) {
