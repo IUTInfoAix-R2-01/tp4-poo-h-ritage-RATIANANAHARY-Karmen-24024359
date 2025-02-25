@@ -43,11 +43,11 @@ public class Student extends Person {
 	}
 
 	public static void main(String[] args) {
-		Student s1 = new Student ("Alexis", "Vietnam","Info",3, 250);
+		Student student1 = new Student ("Alexis", "Vietnam","Info",3, 250);
 		
-		System.out.println(s1);
+		System.out.println(student1);
 		
-		System.out.println("Program:" + s1.program);
-		System.out.println("Year:" + s1.year);
+		System.out.println("Program:" + student1.program);
+		System.out.println("Year:" + student1.year);
 	}
 }

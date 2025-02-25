@@ -1,5 +1,6 @@
 package tp4exosYaip4;
 
+
 public class Person {
 	private String name;
 	private String address;
@@ -21,7 +22,6 @@ public class Person {
 		this.address = address;
 	}
 	
-	@Override
 	public String toString() {
 		return "Person [name=" + name + ", address=" + address + "]";
 	}
@@ -31,11 +31,11 @@ public class Person {
 	}
 	
 	public static void main(String[] args) {
-		Person p1 = new Person ("Alexis", "Vietnam");
+		Staff staff1 = new Staff ("Fred", "Bora bora", "Etablissement de technologie", 3000);
+		Student student1 = new Student ("Alexis", "Vietnam","Info",3, 250);
 		
-		System.out.println(p1);
+		System.out.println(staff1);
+		System.out.println(student1);
 		
-		System.out.println("Name:" + p1.name);
-		System.out.println("Address:" + p1.address);
 	}
 }
